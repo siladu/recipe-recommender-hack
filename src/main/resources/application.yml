@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: ''
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  datasource:
+    url: jdbc:h2:~/shopping;DB_CLOSE_ON_EXIT=FALSE
+
+twitter:
+  client:
+    in:
+      enabled: false
+    out:
+      enabled: false
+
+flyway:
+  baseline-on-migrate: true
+  baseline-version: 1
+  continue-on-error: true
